@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import thunk from "redux-thunk";
+// import thunk from "redux-thunk";
 import "./App.css";
 import Chat from "./Chat";
 import Sidebar from "./Sidebar";

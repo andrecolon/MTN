@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-// https://youtu.be/zc1loX80TX8?t=6669 < -- ABout the Data layer/REDUX for the channels
+// https://youtu.be/zc1loX80TX8?t=6669 < -- About the Data layer/REDUX for the channels
 
 export const appSlice = createSlice({
   name: "app",

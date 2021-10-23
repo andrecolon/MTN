@@ -54,17 +54,13 @@ function Sidebar() {
           <AddIcon onClick={handleAddChannel} className="sidebar__addChannel" />
         </div>
         <div className="sidebar__channelsList">
-          {channels.map(({ id, channel }) => {
+          {channels.map(({ id, channel }) => (
             <SidebarChannel
               key={id}
               id={id}
               channelName={channel.channelName}
-            />;
-          })}
-          {/* {channels.map((channel) => {
-            <SidebarChannel />;
-            console.log(channel.channel);
-          })} */}
+            />
+          ))}
         </div>
       </div>
       <div className="sidebar__voice">
@@ -83,7 +79,11 @@ function Sidebar() {
       </div>
       <div className="sidebar__profile">
         {/* /https://www.youtube.com/watch?v=zc1loX80TX8&t=7638s */}
-        <Avatar onClick={() => auth.signOut()} src="user.photo" />
+        <Avatar
+          onClick={() => auth.signOut()}
+          src={user.photo}
+          alt={user.email}
+        />
         <div className="sidebar__profileInfo">
           <h3>{user.displayName}</h3>
           <p>#{user.uid.substring(0, 5)}</p>

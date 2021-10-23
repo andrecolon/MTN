@@ -20,9 +20,7 @@ function SidebarChannel({ id, channelName }) {
       <h4>
         <span className="sidebarChannel__hash">#</span>
         {channelName}
-        testing output for strings
       </h4>
-      <p>Testing out component</p>
     </div>
   );
 }
