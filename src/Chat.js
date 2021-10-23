@@ -16,7 +16,7 @@ function Chat() {
   const channelName = useSelector(selectChannelName);
   return (
     <div className="chat">
-      <ChatHeader channelName="" />
+      <ChatHeader channelName={channelName} />
 
       <div className="chat__messages">
         <Message />
